@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>个人主页</title>
+    <link rel="stylesheet" href="css/Style1.css"/>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/tree.css"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+
+</head>
+<body>
+<header>
+    <div class="container">
+        <!-- TODO 针对移动端的容器 -->
+        <div class="navbar-header">
+            <!-- TODO 汉堡包按钮 -->
+            <button data-target="#mycollapse" data-toggle="collapse" class="navbar-toggle collapsed">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!-- TODO 品牌图标 -->
+            <a class="navbar-brand" href="#"></a>
+        </div>
+        <!-- TODO 包裹导航条组件的容器 -->
+        <div id="mycollapse" class="navbar-collapse collapse">
+
+            <!-- TODO 导航组件 -->
+
+            <!-- TODO 语言&登录(居右) -->
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a data-toggle="dropdown" href="#">登录</a>
+                    <div class="dropdown-menu">
+                        <!-- TODO 面板组件 -->
+                        <div class="panel">
+                            <div class="panel-body">
+                                <h3>登录</h3>
+                                <p>你来啦!?</p>
+
+                                <form action="#">
+                                    <div class="form-group">
+                                        <input class="form-control" placeholder="用户名" type="text"/>
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control" placeholder="密码" type="password"/>
+                                    </div>
+                                    <p class="form-control-static">您登录表明您同意我们的服务条款</p>
+                                    <button class="btn btn-info btn-xs">登录</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <!-- TODO 搜索框(居右) -->
+            <form class="navbar-form navbar-right" action="#">
+                <p class="form-control-static">查找内容</p>
+                <p class="form-control-static">|</p>
+                <div class="form-group has-feedback">
+                    <input class="form-control" placeholder="搜索" type="search"/>
+                    <span class="glyphicon glyphicon-search form-control-feedback"></span>
+                </div>
+            </form>
+        </div>
+    </div>
+</header>
+<section class="text-center">
+    <div class="container">
+        <div class="video-frame" poster="videos/home-hero-video-desktop-still.jpg">
+            <video autoplay loop>
+                <source src="videos/homepage-hero-video.mp4">
+                <source src="videos/homepage-hero-video.webm">
+            </video>
+        </div>
+        <h3  class="text-primary text-center text-uppercase">长路漫漫  代码为伴</h3>
+        <button class="btn-lg btn-primary">在深渊里奔跑！</button>
+    </div>
+    <footer>
+        <div><img src="imgs/dongman.jpg" alt=""/></div>
+        <div><img src="imgs/youxi.JPG" alt=""/></div>
+        <div><img src="imgs/meishi.jpg" alt=""/></div>
+        <div><img src="imgs/xuexi.jpg" alt=""/></div>
+    </footer>
+</section>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
